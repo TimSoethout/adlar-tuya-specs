@@ -1,0 +1,4 @@
+= Export of Tuya Cloud API's for Adlar Castra Aurora 6kW
+
+Output JSON from https://eu.platform.tuya.com/cloud/explorer .
+`-translated` files are translated using ChatGPT.

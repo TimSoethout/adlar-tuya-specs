@@ -1,0 +1,315 @@
+{
+  "result": {
+    "category": "znrb",
+    "functions": [
+      {
+        "code": "switch",
+        "desc": "{}",
+        "name": "Switch",
+        "type": "Boolean",
+        "values": "{}"
+      },
+      {
+        "code": "mode",
+        "desc": "{\"range\":[\"cold\",\"heating\",\"floor_heating\",\"hot_water\",\"cold_and_hotwater\",\"heating_and_hot_water\",\"floor_heatign_and_hot_water\"]}",
+        "name": "Mode",
+        "type": "Enum",
+        "values": "{\"range\":[\"cold\",\"heating\",\"floor_heating\",\"hot_water\",\"cold_and_hotwater\",\"heating_and_hot_water\",\"floor_heatign_and_hot_water\"]}"
+      },
+      {
+        "code": "temp_set",
+        "desc": "{\"unit\":\"℃\",\"min\":5,\"max\":75,\"scale\":0,\"step\":1}",
+        "name": "Temperature Setting (Cold/Warm)",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":5,\"max\":75,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "work_mode",
+        "desc": "{\"range\":[\"ECO\",\"Normal\",\"Boost\"]}",
+        "name": "Work Mode",
+        "type": "Enum",
+        "values": "{\"range\":[\"ECO\",\"Normal\",\"Boost\"]}"
+      },
+      {
+        "code": "water_set",
+        "desc": "{\"unit\":\"L\",\"min\":0,\"max\":1,\"scale\":0,\"step\":1}",
+        "name": "Control Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"L\",\"min\":0,\"max\":1,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "capacity_set",
+        "desc": "{\"range\":[\"OFF\",\"H1\",\"H2\",\"H3\",\"H4\"]}",
+        "name": "Hot Water Curve Setting",
+        "type": "Enum",
+        "values": "{\"range\":[\"OFF\",\"H1\",\"H2\",\"H3\",\"H4\"]}"
+      },
+      {
+        "code": "countdown_set",
+        "desc": "{\"range\":[\"OFF\",\"H1\",\"H2\",\"H3\",\"H4\",\"H5\",\"H6\",\"H7\",\"H8\",\"L1\",\"L2\",\"L3\",\"L4\",\"L5\",\"L6\",\"L7\",\"L8\"]}",
+        "name": "Curve Setting",
+        "type": "Enum",
+        "values": "{\"range\":[\"OFF\",\"H1\",\"H2\",\"H3\",\"H4\",\"H5\",\"H6\",\"H7\",\"H8\",\"L1\",\"L2\",\"L3\",\"L4\",\"L5\",\"L6\",\"L7\",\"L8\"]}"
+      },
+      {
+        "code": "minitemp_set",
+        "desc": "{\"unit\":\"℃\",\"min\":10,\"max\":75,\"scale\":0,\"step\":1}",
+        "name": "Hot Water Setting Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":10,\"max\":75,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "volume_set",
+        "desc": "{\"unit\":\"\",\"min\":0,\"max\":2,\"scale\":0,\"step\":1}",
+        "name": "Power Detection",
+        "type": "Integer",
+        "values": "{\"unit\":\"\",\"min\":0,\"max\":2,\"scale\":0,\"step\":1}"
+      }
+    ],
+    "status": [
+      {
+        "code": "switch",
+        "name": "Switch",
+        "type": "Boolean",
+        "values": "{}"
+      },
+      {
+        "code": "mode",
+        "name": "Mode",
+        "type": "Enum",
+        "values": "{\"range\":[\"cold\",\"heating\",\"floor_heating\",\"hot_water\",\"cold_and_hotwater\",\"heating_and_hot_water\",\"floor_heatign_and_hot_water\"]}"
+      },
+      {
+        "code": "temp_set",
+        "name": "Temperature Setting (Cold/Warm)",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":5,\"max\":75,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "work_mode",
+        "name": "Work Mode",
+        "type": "Enum",
+        "values": "{\"range\":[\"ECO\",\"Normal\",\"Boost\"]}"
+      },
+      {
+        "code": "water_set",
+        "name": "Control Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"L\",\"min\":0,\"max\":1,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "capacity_set",
+        "name": "Hot Water Curve Setting",
+        "type": "Enum",
+        "values": "{\"range\":[\"OFF\",\"H1\",\"H2\",\"H3\",\"H4\"]}"
+      },
+      {
+        "code": "countdown_set",
+        "name": "Curve Setting",
+        "type": "Enum",
+        "values": "{\"range\":[\"OFF\",\"H1\",\"H2\",\"H3\",\"H4\",\"H5\",\"H6\",\"H7\",\"H8\",\"L1\",\"L2\",\"L3\",\"L4\",\"L5\",\"L6\",\"L7\",\"L8\"]}"
+      },
+      {
+        "code": "countdown_left",
+        "name": "Mainboard Program",
+        "type": "Integer",
+        "values": "{\"unit\":\"\",\"min\":0,\"max\":2000,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "fault",
+        "name": "Fault Alarm",
+        "type": "Bitmap",
+        "values": "{\"label\":[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\",\"13\",\"14\",\"15\",\"16\",\"17\",\"18\",\"19\",\"20\",\"21\",\"22\",\"23\",\"24\",\"25\",\"26\",\"27\",\"28\",\"29\",\"30\"],\"maxlen\":30}"
+      },
+      {
+        "code": "temp_current",
+        "name": "Main Valve",
+        "type": "Integer",
+        "values": "{\"unit\":\"P\",\"min\":-500,\"max\":500,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "power_consumption",
+        "name": "Today's Power Consumption",
+        "type": "Integer",
+        "values": "{\"unit\":\"kW·h\",\"min\":0,\"max\":200000,\"scale\":2,\"step\":1}"
+      },
+      {
+        "code": "compressor_strength",
+        "name": "Compressor Frequency",
+        "type": "Integer",
+        "values": "{\"unit\":\"Hz\",\"min\":0,\"max\":200,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "temp_top",
+        "name": "Inlet Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":-50,\"max\":150,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "temp_bottom",
+        "name": "Outlet Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":-50,\"max\":150,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "coiler_temp",
+        "name": "Coil Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":-50,\"max\":150,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "venting_temp",
+        "name": "Exhaust Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":-50,\"max\":150,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "effluent_temp",
+        "name": "Auxiliary Valve",
+        "type": "Integer",
+        "values": "{\"unit\":\"P\",\"min\":-500,\"max\":500,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "around_temp",
+        "name": "Ambient Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":-50,\"max\":150,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "compressor_state",
+        "name": "Cooling Mode",
+        "type": "Boolean",
+        "values": "{}"
+      },
+      {
+        "code": "backwater",
+        "name": "Hot Water Mode",
+        "type": "Boolean",
+        "values": "{}"
+      },
+      {
+        "code": "defrost_state",
+        "name": "Defrost State",
+        "type": "Boolean",
+        "values": "{}"
+      },
+      {
+        "code": "temp_current_f",
+        "name": "High-Pressure Saturation Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":-50,\"max\":150,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "top_temp_f",
+        "name": "Low-Pressure Saturation Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"℉\",\"min\":-50,\"max\":150,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "bottom_temp_f",
+        "name": "Internal Coil Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":-50,\"max\":150,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "around_temp_f",
+        "name": "Water Tank Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":-50,\"max\":150,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "venting_temp_f",
+        "name": "Water Flow Rate",
+        "type": "Integer",
+        "values": "{\"unit\":\"L/min\",\"min\":0,\"max\":100,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "effluent_temp_f",
+        "name": "Fan Frequency",
+        "type": "Integer",
+        "values": "{\"unit\":\"Hz\",\"min\":0,\"max\":100,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "coiler_temp_f",
+        "name": "Return Air Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":-50,\"max\":150,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "minitemp_set",
+        "name": "Hot Water Setting Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":10,\"max\":75,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "cur_current",
+        "name": "Phase A Current",
+        "type": "Integer",
+        "values": "{\"unit\":\"A\",\"min\":0,\"max\":99999,\"scale\":3,\"step\":1}"
+      },
+      {
+        "code": "voltage_current",
+        "name": "Phase A Voltage",
+        "type": "Integer",
+        "values": "{\"unit\":\"V\",\"min\":0,\"max\":9999,\"scale\":1,\"step\":1}"
+      },
+      {
+        "code": "cur_power",
+        "name": "Power",
+        "type": "Integer",
+        "values": "{\"unit\":\"W\",\"min\":0,\"max\":500000,\"scale\":1,\"step\":1}"
+      },
+      {
+        "code": "electric_total",
+        "name": "Total Power",
+        "type": "Integer",
+        "values": "{\"unit\":\"kW·h\",\"min\":0,\"max\":9999999,\"scale\":2,\"step\":1}"
+      },
+      {
+        "code": "volume_set",
+        "name": "Power Detection",
+        "type": "Integer",
+        "values": "{\"unit\":\"\",\"min\":0,\"max\":2,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "eviin",
+        "name": "Economizer Inlet Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":-50,\"max\":150,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "eviout",
+        "name": "Economizer Outlet Temperature",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":-50,\"max\":150,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "b_cur",
+        "name": "Phase B Current",
+        "type": "Integer",
+        "values": "{\"unit\":\"A\",\"min\":0,\"max\":99999,\"scale\":3,\"step\":1}"
+      },
+      {
+        "code": "c_cur",
+        "name": "Phase C Current",
+        "type": "Integer",
+        "values": "{\"unit\":\"A\",\"min\":0,\"max\":99999,\"scale\":3,\"step\":1}"
+      },
+      {
+        "code": "bv",
+        "name": "Phase B Voltage",
+        "type": "Integer",
+        "values": "{\"unit\":\"V\",\"min\":0,\"max\":10000,\"scale\":1,\"step\":1}"
+      },
+      {
+        "code": "cv",
+        "name": "Phase C Voltage",
+        "type": "Integer",
+        "values": "{\"unit\":\"V\",\"min\":0,\"max\":10000,\"scale\":1,\"step\":1}"
+      }
+    ]
+  },
+  "success": true,
+  "t": 1730477071600,
+  "tid": "faec111e986a11efbfa92a8db75a9554"
+}

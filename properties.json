@@ -1,0 +1,329 @@
+{
+  "result": {
+    "properties": [
+      {
+        "code": "switch",
+        "custom_name": "",
+        "dp_id": 1,
+        "time": 1730352222371,
+        "type": "bool",
+        "value": true
+      },
+      {
+        "code": "mode",
+        "custom_name": "",
+        "dp_id": 2,
+        "time": 1727704896316,
+        "type": "enum",
+        "value": "heating"
+      },
+      {
+        "code": "temp_set",
+        "custom_name": "",
+        "dp_id": 4,
+        "time": 1730444422789,
+        "type": "value",
+        "value": 25
+      },
+      {
+        "code": "work_mode",
+        "custom_name": "",
+        "dp_id": 5,
+        "time": 1728234250639,
+        "type": "enum",
+        "value": "ECO"
+      },
+      {
+        "code": "water_set",
+        "custom_name": "",
+        "dp_id": 10,
+        "time": 1727285967443,
+        "type": "value",
+        "value": 0
+      },
+      {
+        "code": "capacity_set",
+        "custom_name": "",
+        "dp_id": 11,
+        "time": 1727704965849,
+        "type": "enum",
+        "value": "OFF"
+      },
+      {
+        "code": "countdown_set",
+        "custom_name": "",
+        "dp_id": 13,
+        "time": 1730370907763,
+        "type": "enum",
+        "value": "L8"
+      },
+      {
+        "code": "countdown_left",
+        "custom_name": "",
+        "dp_id": 14,
+        "time": 1727285967983,
+        "type": "value",
+        "value": 425
+      },
+      {
+        "code": "fault",
+        "custom_name": "",
+        "dp_id": 15,
+        "time": 1727285968083,
+        "type": "bitmap",
+        "value": 0
+      },
+      {
+        "code": "temp_current",
+        "custom_name": "",
+        "dp_id": 16,
+        "time": 1730472267834,
+        "type": "value",
+        "value": 250
+      },
+      {
+        "code": "power_consumption",
+        "custom_name": "",
+        "dp_id": 18,
+        "time": 1727285968444,
+        "type": "value",
+        "value": 0
+      },
+      {
+        "code": "compressor_strength",
+        "custom_name": "",
+        "dp_id": 20,
+        "time": 1730472182734,
+        "type": "value",
+        "value": 0
+      },
+      {
+        "code": "temp_top",
+        "custom_name": "",
+        "dp_id": 21,
+        "time": 1730475883952,
+        "type": "value",
+        "value": 22
+      },
+      {
+        "code": "temp_bottom",
+        "custom_name": "",
+        "dp_id": 22,
+        "time": 1730475829975,
+        "type": "value",
+        "value": 22
+      },
+      {
+        "code": "coiler_temp",
+        "custom_name": "",
+        "dp_id": 23,
+        "time": 1730474867118,
+        "type": "value",
+        "value": 11
+      },
+      {
+        "code": "venting_temp",
+        "custom_name": "",
+        "dp_id": 24,
+        "time": 1730475768604,
+        "type": "value",
+        "value": 15
+      },
+      {
+        "code": "effluent_temp",
+        "custom_name": "",
+        "dp_id": 25,
+        "time": 1730443530582,
+        "type": "value",
+        "value": 0
+      },
+      {
+        "code": "around_temp",
+        "custom_name": "",
+        "dp_id": 26,
+        "time": 1730472389871,
+        "type": "value",
+        "value": 12
+      },
+      {
+        "code": "compressor_state",
+        "custom_name": "",
+        "dp_id": 27,
+        "time": 1727285972470,
+        "type": "bool",
+        "value": true
+      },
+      {
+        "code": "backwater",
+        "custom_name": "",
+        "dp_id": 31,
+        "time": 1727285969761,
+        "type": "bool",
+        "value": true
+      },
+      {
+        "code": "defrost_state",
+        "custom_name": "",
+        "dp_id": 33,
+        "time": 1727285969956,
+        "type": "bool",
+        "value": false
+      },
+      {
+        "code": "temp_current_f",
+        "custom_name": "",
+        "dp_id": 35,
+        "time": 1730476398680,
+        "type": "value",
+        "value": 11
+      },
+      {
+        "code": "top_temp_f",
+        "custom_name": "",
+        "dp_id": 36,
+        "time": 1730472196374,
+        "type": "value",
+        "value": 11
+      },
+      {
+        "code": "bottom_temp_f",
+        "custom_name": "",
+        "dp_id": 37,
+        "time": 1730475283971,
+        "type": "value",
+        "value": 16
+      },
+      {
+        "code": "around_temp_f",
+        "custom_name": "",
+        "dp_id": 38,
+        "time": 1730475839571,
+        "type": "value",
+        "value": 15
+      },
+      {
+        "code": "venting_temp_f",
+        "custom_name": "",
+        "dp_id": 39,
+        "time": 1730476365091,
+        "type": "value",
+        "value": 6
+      },
+      {
+        "code": "effluent_temp_f",
+        "custom_name": "",
+        "dp_id": 40,
+        "time": 1730472248302,
+        "type": "value",
+        "value": 0
+      },
+      {
+        "code": "coiler_temp_f",
+        "custom_name": "",
+        "dp_id": 41,
+        "time": 1730473759843,
+        "type": "value",
+        "value": 14
+      },
+      {
+        "code": "minitemp_set",
+        "custom_name": "",
+        "dp_id": 101,
+        "time": 1727622715532,
+        "type": "value",
+        "value": 47
+      },
+      {
+        "code": "cur_current",
+        "custom_name": "",
+        "dp_id": 102,
+        "time": 1727285971405,
+        "type": "value",
+        "value": 0
+      },
+      {
+        "code": "voltage_current",
+        "custom_name": "",
+        "dp_id": 103,
+        "time": 1727285971744,
+        "type": "value",
+        "value": 0
+      },
+      {
+        "code": "cur_power",
+        "custom_name": "",
+        "dp_id": 104,
+        "time": 1727285971923,
+        "type": "value",
+        "value": 0
+      },
+      {
+        "code": "electric_total",
+        "custom_name": "",
+        "dp_id": 105,
+        "time": 1727285972106,
+        "type": "value",
+        "value": 0
+      },
+      {
+        "code": "volume_set",
+        "custom_name": "",
+        "dp_id": 106,
+        "time": 1727285972294,
+        "type": "value",
+        "value": 0
+      },
+      {
+        "code": "eviin",
+        "custom_name": "",
+        "dp_id": 107,
+        "time": 1730475297371,
+        "type": "value",
+        "value": 15
+      },
+      {
+        "code": "eviout",
+        "custom_name": "",
+        "dp_id": 108,
+        "time": 1730475673873,
+        "type": "value",
+        "value": 14
+      },
+      {
+        "code": "b_cur",
+        "custom_name": "",
+        "dp_id": 109,
+        "time": 1712690068550,
+        "type": "value",
+        "value": 0
+      },
+      {
+        "code": "c_cur",
+        "custom_name": "",
+        "dp_id": 110,
+        "time": 1712690068550,
+        "type": "value",
+        "value": 0
+      },
+      {
+        "code": "bv",
+        "custom_name": "",
+        "dp_id": 111,
+        "time": 1712690068550,
+        "type": "value",
+        "value": 0
+      },
+      {
+        "code": "cv",
+        "custom_name": "",
+        "dp_id": 112,
+        "time": 1712690068550,
+        "type": "value",
+        "value": 0
+      }
+    ]
+  },
+  "success": true,
+  "t": 1730476400428,
+  "tid": "6adbaf66986911efad5172ecb0bd0dcf"
+}

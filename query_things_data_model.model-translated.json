@@ -1,0 +1,665 @@
+{
+  "modelId": "000004u5nz",
+  "services": [
+    {
+      "actions": [],
+      "code": "",
+      "description": "",
+      "events": [],
+      "name": "Default Service",
+      "properties": [
+        {
+          "abilityId": 1,
+          "accessMode": "rw",
+          "code": "switch",
+          "description": "",
+          "extensions": { "iconName": "icon-dp_power2", "attribute": "1152" },
+          "name": "Switch",
+          "typeSpec": { "type": "bool" }
+        },
+        {
+          "abilityId": 2,
+          "accessMode": "rw",
+          "code": "mode",
+          "description": "",
+          "extensions": { "iconName": "icon-dp_mode", "attribute": "1152" },
+          "name": "Mode",
+          "typeSpec": {
+            "type": "enum",
+            "range": [
+              "cold",
+              "heating",
+              "floor_heating",
+              "hot_water",
+              "cold_and_hotwater",
+              "heating_and_hot_water",
+              "floor_heatign_and_hot_water"
+            ]
+          }
+        },
+        {
+          "abilityId": 4,
+          "accessMode": "rw",
+          "code": "temp_set",
+          "description": "",
+          "extensions": { "iconName": "icon-set", "attribute": "1152" },
+          "name": "Temperature Setting (Cold/Warm)",
+          "typeSpec": {
+            "type": "value",
+            "max": 75,
+            "min": 5,
+            "scale": 0,
+            "step": 1,
+            "unit": "℃"
+          }
+        },
+        {
+          "abilityId": 5,
+          "accessMode": "rw",
+          "code": "work_mode",
+          "description": "",
+          "extensions": { "iconName": "icon-dp_mode", "attribute": "1152" },
+          "name": "Work Mode",
+          "typeSpec": { "type": "enum", "range": ["ECO", "Normal", "Boost"] }
+        },
+        {
+          "abilityId": 10,
+          "accessMode": "rw",
+          "code": "water_set",
+          "description": "",
+          "extensions": { "iconName": "icon-dp_water", "attribute": "1152" },
+          "name": "Control Temperature",
+          "typeSpec": {
+            "type": "value",
+            "max": 1,
+            "min": 0,
+            "scale": 0,
+            "step": 1,
+            "unit": "L"
+          }
+        },
+        {
+          "abilityId": 11,
+          "accessMode": "rw",
+          "code": "capacity_set",
+          "description": "",
+          "extensions": { "iconName": "icon-setting", "attribute": "1152" },
+          "name": "Hot Water Curve Setting",
+          "typeSpec": {
+            "type": "enum",
+            "range": ["OFF", "H1", "H2", "H3", "H4"]
+          }
+        },
+        {
+          "abilityId": 13,
+          "accessMode": "rw",
+          "code": "countdown_set",
+          "description": "",
+          "extensions": { "iconName": "icon-dp_time2", "attribute": "1152" },
+          "name": "Curve Setting",
+          "typeSpec": {
+            "type": "enum",
+            "range": [
+              "OFF",
+              "H1",
+              "H2",
+              "H3",
+              "H4",
+              "H5",
+              "H6",
+              "H7",
+              "H8",
+              "L1",
+              "L2",
+              "L3",
+              "L4",
+              "L5",
+              "L6",
+              "L7",
+              "L8"
+            ]
+          }
+        },
+        {
+          "abilityId": 14,
+          "accessMode": "ro",
+          "code": "countdown_left",
+          "description": "",
+          "extensions": { "iconName": "icon-dp_time2", "attribute": "1152" },
+          "name": "Mainboard Program",
+          "typeSpec": {
+            "type": "value",
+            "max": 2000,
+            "min": 0,
+            "scale": 0,
+            "step": 1,
+            "unit": ""
+          }
+        },
+        {
+          "abilityId": 15,
+          "accessMode": "ro",
+          "code": "fault",
+          "description": "",
+          "extensions": {
+            "iconName": "icon-baojing",
+            "scope": "fault",
+            "attribute": "1152"
+          },
+          "name": "Fault Alarm",
+          "typeSpec": {
+            "type": "bitmap",
+            "label": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30"
+            ],
+            "maxlen": 30
+          }
+        },
+        {
+          "abilityId": 16,
+          "accessMode": "ro",
+          "code": "temp_current",
+          "description": "",
+          "extensions": { "iconName": "icon-dp_c", "attribute": "1664" },
+          "name": "Main Valve",
+          "typeSpec": {
+            "type": "value",
+            "max": 500,
+            "min": -500,
+            "scale": 0,
+            "step": 1,
+            "unit": "P"
+          }
+        },
+        {
+          "abilityId": 18,
+          "accessMode": "ro",
+          "code": "power_consumption",
+          "description": "",
+          "extensions": { "iconName": "icon-dp_battery", "attribute": "1152" },
+          "name": "Today's Power Consumption",
+          "typeSpec": {
+            "type": "value",
+            "max": 200000,
+            "min": 0,
+            "scale": 2,
+            "step": 1,
+            "unit": "kW·h"
+          }
+        },
+        {
+          "abilityId": 20,
+          "accessMode": "ro",
+          "code": "compressor_strength",
+          "description": "",
+          "extensions": {
+            "iconName": "icon-a_mode_turbo",
+            "attribute": "1152"
+          },
+          "name": "Compressor Frequency",
+          "typeSpec": {
+            "type": "value",
+            "max": 200,
+            "min": 0,
+            "scale": 0,
+            "step": 1,
+            "unit": "Hz"
+          }
+        },
+        {
+          "abilityId": 21,
+          "accessMode": "ro",
+          "code": "temp_top",
+          "description": "",
+          "extensions": { "iconName": "icon-wendu2" },
+          "name": "Inlet Temperature",
+          "typeSpec": {
+            "type": "value",
+            "max": 150,
+            "min": -50,
+            "scale": 0,
+            "step": 1,
+            "unit": "℃"
+          }
+        },
+        {
+          "abilityId": 22,
+          "accessMode": "ro",
+          "code": "temp_bottom",
+          "description": "",
+          "extensions": { "iconName": "icon-wendu2" },
+          "name": "Outlet Temperature",
+          "typeSpec": {
+            "type": "value",
+            "max": 150,
+            "min": -50,
+            "scale": 0,
+            "step": 1,
+            "unit": "℃"
+          }
+        },
+        {
+          "abilityId": 23,
+          "accessMode": "ro",
+          "code": "coiler_temp",
+          "description": "",
+          "extensions": { "iconName": "icon-wendu2" },
+          "name": "Coil Temperature",
+          "typeSpec": {
+            "type": "value",
+            "max": 150,
+            "min": -50,
+            "scale": 0,
+            "step": 1,
+            "unit": "℃"
+          }
+        },
+        {
+          "abilityId": 24,
+          "accessMode": "ro",
+          "code": "venting_temp",
+          "description": "",
+          "extensions": { "iconName": "icon-wendu2" },
+          "name": "Exhaust Temperature",
+          "typeSpec": {
+            "type": "value",
+            "max": 150,
+            "min": -50,
+            "scale": 0,
+            "step": 1,
+            "unit": "℃"
+          }
+        },
+        {
+          "abilityId": 25,
+          "accessMode": "ro",
+          "code": "effluent_temp",
+          "description": "",
+          "extensions": { "iconName": "icon-wendu2" },
+          "name": "Auxiliary Valve",
+          "typeSpec": {
+            "type": "value",
+            "max": 500,
+            "min": -500,
+            "scale": 0,
+            "step": 1,
+            "unit": "P"
+          }
+        },
+        {
+          "abilityId": 26,
+          "accessMode": "ro",
+          "code": "around_temp",
+          "description": "",
+          "extensions": { "iconName": "icon-wendu2" },
+          "name": "Ambient Temperature",
+          "typeSpec": {
+            "type": "value",
+            "max": 150,
+            "min": -50,
+            "scale": 0,
+            "step": 1,
+            "unit": "℃"
+          }
+        },
+        {
+          "abilityId": 27,
+          "accessMode": "ro",
+          "code": "compressor_state",
+          "description": "",
+          "extensions": { "iconName": "icon-zhuangtai", "attribute": "1152" },
+          "name": "Cooling Mode",
+          "typeSpec": { "type": "bool" }
+        },
+        {
+          "abilityId": 31,
+          "accessMode": "ro",
+          "code": "backwater",
+          "description": "",
+          "extensions": { "iconName": "icon-dp_power" },
+          "name": "Hot Water Mode",
+          "typeSpec": { "type": "bool" }
+        },
+        {
+          "abilityId": 33,
+          "accessMode": "ro",
+          "code": "defrost_state",
+          "description": "",
+          "extensions": { "iconName": "icon-zhuangtai", "attribute": "1152" },
+          "name": "Defrost State",
+          "typeSpec": { "type": "bool" }
+        },
+        {
+          "abilityId": 35,
+          "accessMode": "ro",
+          "code": "temp_current_f",
+          "description": "",
+          "extensions": { "iconName": "icon-dp_f", "attribute": "1152" },
+          "name": "High-Pressure Saturation Temperature",
+          "typeSpec": {
+            "type": "value",
+            "max": 150,
+            "min": -50,
+            "scale": 0,
+            "step": 1,
+            "unit": "℃"
+          }
+        },
+        {
+          "abilityId": 36,
+          "accessMode": "ro",
+          "code": "top_temp_f",
+          "description": "",
+          "extensions": { "iconName": "icon-wendu2", "attribute": "1152" },
+          "name": "Low-Pressure Saturation Temperature",
+          "typeSpec": {
+            "type": "value",
+            "max": 150,
+            "min": -50,
+            "scale": 0,
+            "step": 1,
+            "unit": "℉"
+          }
+        },
+        {
+          "abilityId": 37,
+          "accessMode": "ro",
+          "code": "bottom_temp_f",
+          "description": "",
+          "extensions": { "iconName": "icon-wendu2", "attribute": "1152" },
+          "name": "Internal Coil Temperature",
+          "typeSpec": {
+            "type": "value",
+            "max": 150,
+            "min": -50,
+            "scale": 0,
+            "step": 1,
+            "unit": "℃"
+          }
+        },
+        {
+          "abilityId": 38,
+          "accessMode": "ro",
+          "code": "around_temp_f",
+          "description": "",
+          "extensions": { "iconName": "icon-wendu2", "attribute": "1152" },
+          "name": "Water Tank Temperature",
+          "typeSpec": {
+            "type": "value",
+            "max": 150,
+            "min": -50,
+            "scale": 0,
+            "step": 1,
+            "unit": "℃"
+          }
+        },
+        {
+          "abilityId": 39,
+          "accessMode": "ro",
+          "code": "venting_temp_f",
+          "description": "",
+          "extensions": { "iconName": "icon-wendu2", "attribute": "1152" },
+          "name": "Water Flow Rate",
+          "typeSpec": {
+            "type": "value",
+            "max": 100,
+            "min": 0,
+            "scale": 0,
+            "step": 1,
+            "unit": "L/min"
+          }
+        },
+        {
+          "abilityId": 40,
+          "accessMode": "ro",
+          "code": "effluent_temp_f",
+          "description": "",
+          "extensions": { "iconName": "icon-wendu2", "attribute": "1152" },
+          "name": "Fan Frequency",
+          "typeSpec": {
+            "type": "value",
+            "max": 100,
+            "min": 0,
+            "scale": 0,
+            "step": 1,
+            "unit": "Hz"
+          }
+        },
+        {
+          "abilityId": 41,
+          "accessMode": "ro",
+          "code": "coiler_temp_f",
+          "description": "",
+          "extensions": { "iconName": "icon-wendu2", "attribute": "1152" },
+          "name": "Return Air Temperature",
+          "typeSpec": {
+            "type": "value",
+            "max": 150,
+            "min": -50,
+            "scale": 0,
+            "step": 1,
+            "unit": "℃"
+          }
+        },
+        {
+          "abilityId": 101,
+          "accessMode": "rw",
+          "code": "minitemp_set",
+          "description": "",
+          "extensions": { "iconName": "icon-wendu1", "attribute": "4096" },
+          "name": "Hot Water Setting Temperature",
+          "typeSpec": {
+            "type": "value",
+            "max": 75,
+            "min": 10,
+            "scale": 0,
+            "step": 1,
+            "unit": "℃"
+          }
+        },
+        {
+          "abilityId": 102,
+          "accessMode": "ro",
+          "code": "cur_current",
+          "description": "",
+          "extensions": { "iconName": "icon-dp_0", "attribute": "4096" },
+          "name": "Phase A Current",
+          "typeSpec": {
+            "type": "value",
+            "max": 99999,
+            "min": 0,
+            "scale": 3,
+            "step": 1,
+            "unit": "A"
+          }
+        },
+        {
+          "abilityId": 103,
+          "accessMode": "ro",
+          "code": "voltage_current",
+          "description": "",
+          "extensions": {
+            "iconName": "icon-dp_lightning",
+            "attribute": "4096"
+          },
+          "name": "Phase A Voltage",
+          "typeSpec": {
+            "type": "value",
+            "max": 9999,
+            "min": 0,
+            "scale": 1,
+            "step": 1,
+            "unit": "V"
+          }
+        },
+        {
+          "abilityId": 104,
+          "accessMode": "ro",
+          "code": "cur_power",
+          "description": "",
+          "extensions": { "iconName": "icon-gaodiyin", "attribute": "4096" },
+          "name": "Power",
+          "typeSpec": {
+            "type": "value",
+            "max": 500000,
+            "min": 0,
+            "scale": 1,
+            "step": 1,
+            "unit": "W"
+          }
+        },
+        {
+          "abilityId": 105,
+          "accessMode": "ro",
+          "code": "electric_total",
+          "description": "",
+          "extensions": { "iconName": "icon-dianliang", "attribute": "4096" },
+          "name": "Total Power",
+          "typeSpec": {
+            "type": "value",
+            "max": 9999999,
+            "min": 0,
+            "scale": 2,
+            "step": 1,
+            "unit": "kW·h"
+          }
+        },
+        {
+          "abilityId": 106,
+          "accessMode": "rw",
+          "code": "volume_set",
+          "description": "0: No Power Module\n1: Single-Phase Power Module\n2: Three-Phase Power Module",
+          "extensions": { "iconName": "icon-dp_voice", "attribute": "4096" },
+          "name": "Power Detection",
+          "typeSpec": {
+            "type": "value",
+            "max": 2,
+            "min": 0,
+            "scale": 0,
+            "step": 1,
+            "unit": ""
+          }
+        },
+        {
+          "abilityId": 107,
+          "accessMode": "ro",
+          "code": "eviin",
+          "description": "",
+          "name": "Economizer Inlet Temperature",
+          "typeSpec": {
+            "type": "value",
+            "max": 150,
+            "min": -50,
+            "scale": 0,
+            "step": 1,
+            "unit": "℃"
+          }
+        },
+        {
+          "abilityId": 108,
+          "accessMode": "ro",
+          "code": "eviout",
+          "description": "",
+          "name": "Economizer Outlet Temperature",
+          "typeSpec": {
+            "type": "value",
+            "max": 150,
+            "min": -50,
+            "scale": 0,
+            "step": 1,
+            "unit": "℃"
+          }
+        },
+        {
+          "abilityId": 109,
+          "accessMode": "ro",
+          "code": "b_cur",
+          "description": "",
+          "name": "Phase B Current",
+          "typeSpec": {
+            "type": "value",
+            "max": 99999,
+            "min": 0,
+            "scale": 3,
+            "step": 1,
+            "unit": "A"
+          }
+        },
+        {
+          "abilityId": 110,
+          "accessMode": "ro",
+          "code": "c_cur",
+          "description": "",
+          "name": "Phase C Current",
+          "typeSpec": {
+            "type": "value",
+            "max": 99999,
+            "min": 0,
+            "scale": 3,
+            "step": 1,
+            "unit": "A"
+          }
+        },
+        {
+          "abilityId": 111,
+          "accessMode": "ro",
+          "code": "bv",
+          "description": "",
+          "name": "Phase B Voltage",
+          "typeSpec": {
+            "type": "value",
+            "max": 10000,
+            "min": 0,
+            "scale": 1,
+            "step": 1,
+            "unit": "V"
+          }
+        },
+        {
+          "abilityId": 112,
+          "accessMode": "ro",
+          "code": "cv",
+          "description": "",
+          "name": "Phase C Voltage",
+          "typeSpec": {
+            "type": "value",
+            "max": 10000,
+            "min": 0,
+            "scale": 1,
+            "step": 1,
+            "unit": "V"
+          }
+        }
+      ]
+    }
+  ]
+}

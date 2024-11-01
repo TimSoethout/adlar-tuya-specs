@@ -1,0 +1,73 @@
+{
+  "result": {
+    "category": "znrb",
+    "functions": [
+      {
+        "code": "switch",
+        "desc": "switch",
+        "name": "switch",
+        "type": "Boolean",
+        "values": "{}"
+      },
+      {
+        "code": "mode",
+        "desc": "mode",
+        "name": "mode",
+        "type": "Enum",
+        "values": "{\"range\":[\"cold\",\"heating\",\"floor_heating\",\"hot_water\",\"cold_and_hotwater\",\"heating_and_hot_water\",\"floor_heatign_and_hot_water\"]}"
+      },
+      {
+        "code": "temp_set",
+        "desc": "temp set",
+        "name": "temp set",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":5,\"max\":75,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "work_mode",
+        "desc": "work mode",
+        "name": "work mode",
+        "type": "Enum",
+        "values": "{\"range\":[\"ECO\",\"Normal\",\"Boost\"]}"
+      },
+      {
+        "code": "water_set",
+        "desc": "water set",
+        "name": "water set",
+        "type": "Integer",
+        "values": "{\"unit\":\"L\",\"min\":0,\"max\":1,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "capacity_set",
+        "desc": "capacity set",
+        "name": "capacity set",
+        "type": "Enum",
+        "values": "{\"range\":[\"OFF\",\"H1\",\"H2\",\"H3\",\"H4\"]}"
+      },
+      {
+        "code": "countdown_set",
+        "desc": "countdown set",
+        "name": "countdown set",
+        "type": "Enum",
+        "values": "{\"range\":[\"OFF\",\"H1\",\"H2\",\"H3\",\"H4\",\"H5\",\"H6\",\"H7\",\"H8\",\"L1\",\"L2\",\"L3\",\"L4\",\"L5\",\"L6\",\"L7\",\"L8\"]}"
+      },
+      {
+        "code": "minitemp_set",
+        "desc": "minitemp set",
+        "name": "minitemp set",
+        "type": "Integer",
+        "values": "{\"unit\":\"℃\",\"min\":10,\"max\":75,\"scale\":0,\"step\":1}"
+      },
+      {
+        "code": "volume_set",
+        "desc": "volume set",
+        "name": "volume set",
+        "type": "Integer",
+        "values": "{\"unit\":\"\",\"min\":0,\"max\":2,\"scale\":0,\"step\":1}"
+      }
+    ]
+  },
+  "success": true,
+  "t": 1730477035790,
+  "tid": "e594a3da986a11efad5172ecb0bd0dcf"
+}
